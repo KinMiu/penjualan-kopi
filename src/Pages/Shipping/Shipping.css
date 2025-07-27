@@ -1,0 +1,186 @@
+.my-order-page {
+  padding: 40px 5vw;
+  background: #f7f9fc;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+#my-order-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #240750;
+}
+
+.my-order-table {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.my-order-table div {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.my-order-table a {
+  color: #240750;
+  transition: color 0.3s;
+}
+
+.my-order-table a:hover {
+  color: #4e1b9c;
+}
+
+.MuiDataGrid-columnHeader {
+  background-color: #240750;
+  padding: 16px !important;
+}
+
+.MuiDataGrid-columnHeader div {
+  color: #fff;
+  font-size: 1rem !important;
+  font-weight: 600;
+}
+
+.MuiDataGrid-root .MuiDataGrid-cell--textLeft,
+.MuiDataGrid-root .MuiDataGrid-cell--textRight {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.greenColor {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.redColor {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  .my-order-page {
+    padding: 20px 2vw;
+  }
+
+  #my-order-heading {
+    font-size: 1.5rem;
+  }
+
+  .MuiDataGrid-columnHeader {
+    padding: 12px !important;
+  }
+
+  .MuiDataGrid-columnHeader div {
+    font-size: 0.95rem !important;
+  }
+
+  .my-order-table div {
+    font-size: 0.85rem;
+  }
+}
+
+/* Redesigned Shipping CSS */
+.shippingContainer {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f7f9fc;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+
+.shippingBox {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 30px 20px;
+}
+
+.shippingHeading {
+  text-align: center;
+  color: #240750;
+  font: 600 1.5rem "Roboto";
+  margin-bottom: 20px;
+}
+
+.shippingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.shippingForm > div {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.shippingForm > div > input,
+.shippingForm > div > select {
+  width: 100%;
+  padding: 12px 16px 12px 45px;
+  font: 400 1rem 'Roboto', sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.shippingForm > div > input:focus,
+.shippingForm > div > select:focus {
+  border-color: #240750;
+}
+
+.shippingForm > div > svg {
+  position: absolute;
+  left: 15px;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.shippingBtn {
+  border: none;
+  background-color: #240750;
+  color: white;
+  font: 500 1rem "Roboto";
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.shippingBtn:hover {
+  background-color: #401f8b;
+}
+
+@media screen and (max-width: 600px) {
+  .shippingBox {
+    width: 95%;
+    padding: 25px 15px;
+  }
+
+  .shippingHeading {
+    font-size: 1.3rem;
+  }
+
+  .shippingForm > div > input,
+  .shippingForm > div > select {
+    padding-left: 40px;
+    font-size: 0.95rem;
+  }
+
+  .shippingBtn {
+    font-size: 1rem;
+  }
+}

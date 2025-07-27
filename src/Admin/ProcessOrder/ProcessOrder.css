@@ -1,0 +1,143 @@
+/* Container layout */
+.confirm-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+
+/* Bagian kiri dan kanan */
+.left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.right {
+  flex: 1;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul Section */
+.section-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.section-title.center {
+  text-align: center;
+}
+
+/* Info box */
+.shipping-info-box,
+.payment-info,
+.status-info,
+.cart-info-box {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.info-row {
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.infoPayment > span,
+.status-info > span {
+  display: block;
+  margin: 0.4rem 0;
+  font-size: 1rem;
+}
+
+/* Order item */
+.item-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.img-name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.item-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.item-name {
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.item-name:hover {
+  text-decoration: underline;
+}
+
+.quantity-rupiah {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Form update order */
+.updateOrderForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.updateOrderForm > div {
+  position: relative;
+}
+
+.updateOrderForm select {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 2.5rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.updateOrderForm svg {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #888;
+}
+
+#productListHeading {
+  font-size: 1.8rem;
+  margin: 2rem 0;
+  text-align: center;
+  color: #240750;
+}
+
+/* Status colors */
+.greenColor {
+  color: green;
+  font-weight: bold;
+}
+
+.redColor {
+  color: red;
+  font-weight: bold;
+}

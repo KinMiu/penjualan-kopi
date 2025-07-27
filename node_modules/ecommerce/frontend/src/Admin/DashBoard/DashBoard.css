@@ -1,0 +1,115 @@
+/* DashBoard.css */
+
+.dashboard {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  background-color: #f4f6f9;
+  font-family: 'Roboto', sans-serif;
+}
+
+.dashboard-container {
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-left: 1px solid #e0e0e0;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #240750;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.dashboardSummary {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.summaryBox {
+  background-color: #240750;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.summaryBox h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.dashboardSummaryBox2 {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.dashboardSummaryBox2 a {
+  flex: 1 1 150px;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboardSummaryBox2 a:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-3px);
+}
+
+.dashboardSummaryBox2 a p {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.dashboardSummaryBox2 a span {
+  font-size: 1.2rem;
+}
+
+.charts {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.chartBox {
+  flex: 1 1 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.chartBox h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .charts {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .dashboardSummaryBox2 {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

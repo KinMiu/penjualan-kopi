@@ -1,0 +1,116 @@
+.my-order-page {
+  padding: 40px 5vw;
+  background: linear-gradient(to bottom right, #f0f2f5, #ffffff);
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#my-order-heading {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #3e1f92;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+#my-order-heading::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #6c5ce7;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.ordersTableWrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+}
+
+.ordersTable .MuiDataGrid-columnHeaders {
+  background-color: #6c5ce7;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.MuiDataGrid-root .MuiDataGrid-cell {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.greenColor {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.redColor {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Tombol Aksi */
+.actionBtns {
+  margin-top: 10px;
+  display: flex;  
+  gap: 10px;
+}
+
+.detailBtn,
+.payBtn {
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.detailBtn {
+  background-color: #f1f3f5;
+  color: #3e1f92;
+}
+
+.detailBtn:hover {
+  background-color: #dbe4ff;
+}
+
+.payBtn {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.payBtn:hover {
+  background-color: #ffe066;
+  color: #704c00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #my-order-heading {
+    font-size: 1.8rem;
+  }
+
+  .ordersTableWrapper {
+    border-radius: 10px;
+  }
+
+  .MuiDataGrid-root .MuiDataGrid-cell {
+    font-size: 0.85rem;
+  }
+
+  .detailBtn,
+  .payBtn {
+    font-size: 16px;
+    padding: 6px 8px;
+  }
+}

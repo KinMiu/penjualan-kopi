@@ -1,0 +1,74 @@
+/* Container utama */
+.filteration-section {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+  max-width: 240px;
+  margin-top: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Judul kecil */
+.top-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Layout filter */
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+/* List kategori dan diskon */
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-list li {
+  font-size: 14px;
+  color: #555;
+  padding: 4px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-list li:hover,
+.category-list li.bold {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+/* Slider (MUI) custom override */
+.MuiSlider-root {
+  color: #3498db;
+}
+
+/* Margin tambahan jika rating > 0 */
+.marginBottom {
+  margin-bottom: 10px;
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 768px) {
+  .filteration-section {
+    position: static;
+    max-width: 100%;
+    box-shadow: none;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .flex {
+    margin-bottom: 16px;
+  }
+}

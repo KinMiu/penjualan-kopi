@@ -8,7 +8,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'http://localhost:4000', // Backend server port
+        target: 'https://api-coffee.psti-ubl.id/', // Backend server port
         changeOrigin: true,
         secure: false,
         configure: (proxy, options) => {
